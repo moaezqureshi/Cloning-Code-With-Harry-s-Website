@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +31,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">Courses</a></li>
           <li><a href="#" class="disabled">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <div class="community">
           <button class="btn btn-primary text-sm">Login</button>
@@ -45,8 +46,8 @@
     <div class="h-container1 mx-auto">
       <div class="h-con1-1">
         <div style="height: 208; width: 544;">
-          <h2>Welcome to <span> Clone of CodeWithHarry</span></h2>
-          <p><sub>This is a clone of codewithharry.com</sub>Confused on which course to take? I have got you covered. Browse courses and find out the best course for
+          <h2>Welcome to <span>CodeWithHarry</span></h2>
+          <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course for
             you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short
             time which took me ages to learn.</p>
           <div id="h-con1-1-2">
@@ -106,7 +107,7 @@
               alt="Tailwind Course in Hindi" class="w-full-image">
             <div class="main-content-text">
               <span class="FreeCourses-title">Free Course</span>
-              <div class="title-font">
+              <div class="title-font text-lg">
                 <a href="">React Js Tutorials For Beginners</a>
               </div>
               <p>

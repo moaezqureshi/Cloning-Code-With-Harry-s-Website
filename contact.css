@@ -1,0 +1,38 @@
+#enquiry-form{
+    
+    background-color: rgba(165, 122, 204, 0.993);
+    margin-left:15rem;
+    margin-right:15rem;
+    margin-top: 60px;
+    border-radius: 15px;
+    padding: 65px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#enquiry-form form #input-area{ 
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+}
+
+
+form input,textarea{
+    margin: 10px 0px;
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 5px 5px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+form input{
+    padding: 8px 5px;
+}
+
+input,textarea::placeholder{
+    font-weight: bold;
+    font-family: monospace;
+}
