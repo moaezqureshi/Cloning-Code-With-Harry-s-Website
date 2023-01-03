@@ -1,26 +1,4 @@
-<?php
-$servername="localhost";
-$username="root";
-$password="";
-$dbname="cwh demo db";
 
-
-
-// Let's create a connection
-$conn= new mysqli($servername,$username,$password,$dbname);
-// checking connection
-if ($conn->connect_error) {
-    die("Connection failed: ". $conn->connect_error);
-}
-else {
-    echo "<script> console.log('connection successful');</script>";    
-    // echo "ok connection successful";
-}
-
-
-// echo "Hello world";
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,37 +55,6 @@ else {
         <button name="submit" class="btn-primary ">submit</button>
 
       </div>
-      <?php
-          
-          if(isset($_POST["submit"])){
-            $name = $_POST["username"];
-            $email = $_POST["email"];
-            $no = $_POST["pnumber"];
-            $fdback;
-          
-            // echo "Name : ". $name . "<br>";
-            // echo "$email<br>";
-            // echo "$no<br>";
-            // echo $fdback;
-
-          $sql = "INSERT INTO `contact info` (`name` , `email` , `phone_number`) VALUES ('$name' , '$email' , '$no')";
-          echo "<strong>";
-          if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
-          } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-          }
-          echo "<br>";
-          print_r($sql);
-          echo "<br> <br> ";
-
-          print_r ($_POST);
-
-          echo "</strong>";
-          header("Location: http://localhost/Cloning-Code-With-Harry-s-Website/contact.php");
-          // exit();
-          }
-          ?>
     </form>
   </div>
 </body>
